@@ -1,0 +1,71 @@
+ol {
+    list-style: none;
+    counter-reset: li;
+}
+
+li:before {
+    font-weight: bold;
+    counter-increment: li;
+    content: counters(li, ".") ". ";
+
+}
+
+html {
+    background: linear-gradient(to top, black, 25%, cyan);
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    font-size: 24px;
+    margin: 24px 0 48px 0;
+}
+
+ .list {
+    width: 95%;
+    column-count: 4;
+    display: flex;
+    flex-flow:row;
+    justify-content: space-around;
+}
+
+ .arch {
+    margin: 0 0 0 -20px;
+}
+
+ .sys {
+    width: 800px;
+}
+
+.net {
+    width: 700px;
+}
+
+/* .proj {
+    border: 2px solid khaki;
+}
+
+.spz {
+    border: 2px solid darkblue;
+} */
+
+.search {
+    width: 50%;
+    text-align: center;
+}
+
+.submit {
+    width: 70px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+h1 {
+    font-size: 32px;
+}
