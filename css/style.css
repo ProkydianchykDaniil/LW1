@@ -13,6 +13,7 @@ li:before {
 html {
     background: linear-gradient(to top, black, 25%, cyan);
     height: 100%;
+    
 }
 
 header {
@@ -25,10 +26,14 @@ header {
 
  .list {
     width: 95%;
-    column-count: 4;
     display: flex;
     flex-flow:row;
-    justify-content: space-around;
+    justify-content: left;
+}
+
+.sublist {
+    
+    padding: 0 10px 0 15px;
 }
 
  .arch {
@@ -36,6 +41,7 @@ header {
 }
 
  .sys {
+    
     width: 800px;
 }
 
@@ -68,4 +74,24 @@ form {
 
 h1 {
     font-size: 32px;
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        background: linear-gradient(to top, black, 25%, cyan);
+        height: auto;
+
+        
+    }
+
+
+
+    .list {
+        font-size:67%;
+
+    }
+
+    header {
+        font-size: 16px;
+    }
 }
